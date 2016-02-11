@@ -8,11 +8,11 @@ Unless otherwise noted, this theme is released under MIT licence.
 
 ## Credits
 Thank you so much for providing free resources and inspirations
-[getbootstrap](http://getbootstrap.com/)
-[jekyll](https://jekyllrb.com/)
-[startboostrap](http://startbootstrap.com/)
-[noisetexturegenerator](http://www.noisetexturegenerator.com/)
-[yellow blue by Christos Alatzas](http://demo-yb.yellowblue.eu/)
+* [getbootstrap](http://getbootstrap.com/)
+* [jekyll](https://jekyllrb.com/)
+* [startboostrap](http://startbootstrap.com/)
+* [noisetexturegenerator](http://www.noisetexturegenerator.com/)
+* [yellow blue by Christos Alatzas](http://demo-yb.yellowblue.eu/)
 
 ## Getting Started
 
