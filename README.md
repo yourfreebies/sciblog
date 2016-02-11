@@ -1,8 +1,8 @@
 # [Air Raya Group](http://webdesign.airrayagroup.com/)
 
-[Sci blog](http://airrayagroupwebdesign.github.io/sciblog/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
+[Sci blog](http://sciblog.accessonline.xyz/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
 
-[demo](http://airrayagroupwebdesign.github.io/sciblog/) 
+[demo](http://sciblog.accessonline.xyz/) 
 
 Unless otherwise noted, this theme is released under MIT licence. 
 
