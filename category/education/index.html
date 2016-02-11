@@ -1,0 +1,10 @@
+---
+layout: categories_list
+cat_name: 'education'
+---
+
+{% for post in site.categories.['education'] %}
+
+  {% include catandtag.html %}
+
+{% endfor %}

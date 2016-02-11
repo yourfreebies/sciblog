@@ -1,0 +1,91 @@
+ 
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                	<h1>Posts in category: <span class="outside-cats">{{page.cat_name}}</span></h1>
+                    <div role="main" class="main-content">
+                      {{ content }}
+                    </div>
+					<hr>
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+					<form action="http://www.google.com" id="cse-search-box">
+					  <div>
+					    <input type="hidden" name="cx" value="" />
+					    <input type="hidden" name="ie" value="UTF-8" />
+					    <input type="text" name="q" size="20" />
+					    <input type="submit" name="sa" value="Search" />
+					  </div>
+					</form>
+					<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+				</div>
+            </div>
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+								{% for cat in site.categories %}
+								{% assign cat_name = cat | first %}
+								{% assign cat_size = cat | last | size %}
+								{% assign cat_slug = cat_name | slugify  %}
+									<a class="bold" href="/category/{{cat_slug | prepend: site.baseurl}}">
+										{{cat_name}} ({{cat_size}})
+									</a>
+                        </div>
+                        <div class="col-lg-6">
+                        	{% endfor %}
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- Side Widget Well -->
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                	<h4>Recent posts</h4>
+                		<ul class="posts" style="list-style-image: url('../img/code.png');">  
+							{% for post in site.posts limit:10 %}  
+							   <li>  
+								   <span>{{ post.date | date_to_string }}</span>
+								   <a href="{{ BASE_PATH }}{{ post.url }}">  
+								   {{ post.title }}</a>  
+							   </li>  
+							{% endfor %}  
+						</ul>
+                </div>
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Tags</h4>
+                        <ul>
+                            {% for tag in site.tags %}
+                            {% assign tag_name = tag | first %}
+                            {% assign tag_size = tag | last | size %}
+                            {% assign tag_slug = tag_name | slugify  %}
+                                <a class="tag-label bold" href="/tag/{{tag_slug | prepend: site.baseurl}}">
+                                    {{tag_name}} ({{tag_size}})
+                                </a>
+                            {% endfor %}
+                        </ul>
+                </div>
+                <div class="well">
+                    <h4>This blog is maintained by <a href="http://webdesign.airrayagroup.com/">AIRRAYA</a></h4>
+                    <p>Get in touch with us at airrayagroup@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.row -->
+       <hr>

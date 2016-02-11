@@ -1,0 +1,19 @@
+<div class="post">
+
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-title-link">
+      <h2>{{post.title}}</h2>
+    </a>
+
+    <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+    
+    <div class="post-body">
+      {% if post.hero_low %}
+      {% endif %}
+      {{ post.excerpt }}
+    </div>
+
+    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">
+       <span class="read-more-text">Read More</span>
+    </a>
+
+</div>

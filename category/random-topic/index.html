@@ -1,0 +1,10 @@
+---
+layout: categories_list
+cat_name: 'Random Topic'
+---
+
+{% for post in site.categories.['Random Topic'] %}
+
+  {% include catandtag.html %}
+
+{% endfor %}

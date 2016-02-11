@@ -1,0 +1,95 @@
+/*!
+ * Designed by Airraya Group web design (http://webdesign.airrayagroup.com/)
+ * noise background from (http://www.noisetexturegenerator.com/)
+ */
+
+body { 
+    background-image: url('../img/body.png');
+ }
+.readmore {
+	margin-right: 5px;
+}
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+.navbar-default {
+    background-color: #2B7AD4;
+    border-color: #e7e7e7;
+    font-family: 'Schoolbell', cursive;
+    color: #0180EC !important;
+    font-size: 30px;
+    background-image: url('../img/bg.png');
+    background-repeat: repeat;
+    border: none;
+}
+.navbar-brand {
+	color: #FFFFFF !important;
+	font-size: 30px;
+}
+.navbar-nav>li>a {
+    color: #FFFFFF !important;
+    font-size: 25px;
+}
+header.intro-header {
+	background-image: url('../img/bg.png');
+	background-repeat: repeat;
+	color: #FFFFFF;
+	padding-bottom: 30px;
+	padding-top: 20px;
+    margin-bottom: 30px;
+}
+.well {
+    background-image: url('../img/well.png');
+    background-color: #f5f5f5;
+    box-shadow: none;
+    border: 1px solid #E7E7E7;
+}
+.input {
+    background-image: url('../img/search.png');
+}
+form#cse-search-box {
+    background-image: url('../img/search.png') !important;
+}
+a {
+    color: #2582F2;
+    text-decoration: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+}
+a:focus, a:hover {
+    color: rgb(4, 80, 173);
+    text-decoration: underline;
+}
+.heading {
+    margin-right: 0px;
+}
+.btn-default.sciblog {
+    background: transparent;
+    height: 35px;
+    width: 75px;
+    float: right;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-default.sciblog:hover {
+    color: #0089FF;
+    background-color: #fff;
+    border-color: #adadad;
+}
+img {
+    vertical-align: middle;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.title-image {
+    width: 50px;
+}
+.sciblog {
+
+}

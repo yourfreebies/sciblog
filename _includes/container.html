@@ -1,0 +1,122 @@
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                	<div class="post-list" style="list-style-type: none;">
+						{% for post in paginator.posts %} 	
+							<h2>
+								<img class="title-image" src="{{ "/img/dna.png" | prepend: site.baseurl }}"/>
+								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+							</h2>
+							<div class="author" style="margin-top: -10px;">Posted by
+								<i class="fa fa-user"></i><a href="http://webdesign.airrayagroup.com/"> {{ post.author}}</a>
+								<span class="post-meta"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
+							</div>
+							<div class="excerpt">{{ post.excerpt }}</div>
+							<div class="readmore" style="float: left;">
+								{% if post.content | post_contains_excerpt_tag %}
+									<a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+								{% endif %}
+							</div>								
+					</div>
+					<hr>
+						<div class="post-list" style="list-style-type: none;">			
+							{% endfor %} 
+						</div>
+					<!-- Pagination links -->
+				<div class="pagination">
+				  {% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+				  {% else %}
+					<span class="previous">Previous</span>
+				  {% endif %}
+				  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+				  {% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+				  {% else %}
+					<span class="next ">Next</span>
+				  {% endif %}
+				</div>
+            </div>
+
+            <!-- Widget -->
+            <div class="col-md-4">
+
+                <!-- Blog Search -->
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+					<form action="http://www.google.com" id="cse-search-box">
+					  <div>
+					    <input type="hidden" name="cx" value="" />
+					    <input type="hidden" name="ie" value="UTF-8" />
+					    <input type="text" name="q" size="20" />
+					    <input type="submit" name="sa" value="Search" />
+					  </div>
+					</form>
+					<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+				</div>
+            </div>
+                <!-- Blog Categories -->
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+								{% for cat in site.categories %}
+								{% assign cat_name = cat | first %}
+								{% assign cat_size = cat | last | size %}
+								{% assign cat_slug = cat_name | slugify  %}
+									<a class="bold" href="/category/{{cat_slug | prepend: site.baseurl}}">
+										{{cat_name}} ({{cat_size}})
+									</a>
+                        </div>
+                        <div class="col-lg-6">
+                        	{% endfor %}
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- end -->
+
+                <!-- Recents post -->
+                <div class="well">
+                	<h4>Recent posts</h4>
+                		<ul class="posts" style="list-style-image: url('../img/code.png');">  
+							{% for post in site.posts limit:10 %}  
+							   <li>  
+								   <span>{{ post.date | date_to_string }}</span>
+								   <a href="{{ BASE_PATH }}{{ post.url }}">  
+								   {{ post.title }}</a>  
+							   </li>  
+							{% endfor %}  
+						</ul>
+                </div>
+                <!-- tags widget -->
+                <div class="well">
+                    <h4>Tags</h4>
+                        <ul>
+                            {% for tag in site.tags %}
+                            {% assign tag_name = tag | first %}
+                            {% assign tag_size = tag | last | size %}
+                            {% assign tag_slug = tag_name | slugify  %}
+                                <a class="tag-label bold" href="/tag/{{tag_slug | prepend: site.baseurl}}">
+                                    {{tag_name}} ({{tag_size}})
+                                </a>
+                            {% endfor %}
+                        </ul>
+                </div>
+                <!-- author widget -->
+                <div class="well">
+                    <h4>This blog is maintained by <a href="http://webdesign.airrayagroup.com/">AIRRAYA</a></h4>
+                    <p>Get in touch with us at airrayagroup@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.row -->
+       <hr>
