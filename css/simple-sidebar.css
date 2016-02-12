@@ -99,29 +99,107 @@
 }
 
 @media(min-width:768px) {
-#wrapper {
-padding-right: 0;
-}
+    #wrapper {
+    padding-right: 0;
+    }
 
-#wrapper.toggled {
-padding-right: 0px;
-}
+    #wrapper.toggled {
+    padding-right: 0px;
+    }
 
-#sidebar-wrapper {
-width: 0;
-}
+    #sidebar-wrapper {
+    width: 0;
+    }
 
-#wrapper.toggled #sidebar-wrapper {
-width: 200px;
-}
+    #wrapper.toggled #sidebar-wrapper {
+    width: 200px;
+    }
 
-#page-content-wrapper {
+    #page-content-wrapper {
 
-position: absolute;
-}
+    position: absolute;
+    }
 
-#wrapper.toggled #page-content-wrapper {
-position: absolute;
-margin-right: -250px;
+    #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+    }
 }
+@media only screen and (max-device-width: 480px) {
+    #wrapper {
+    padding-right: 0;
+    }
+
+    #wrapper.toggled {
+    padding-right: 0px;
+    }
+
+    #sidebar-wrapper {
+    width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+    width: 200px;
+    }
+
+    #page-content-wrapper {
+
+    position: absolute;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+    width: 130px;
+    }
+    #wrapper.toggled {
+    padding-left: 120px;
+    }
+
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+     #wrapper {
+    padding-right: 0;
+    }
+
+    #wrapper.toggled {
+    padding-right: 0px;
+    }
+
+    #sidebar-wrapper {
+    width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+    width: 200px;
+    }
+
+    #page-content-wrapper {
+
+    position: absolute;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+    width: 130px;
+    }
+    #wrapper.toggled {
+    padding-left: 120px;
+    }
+    .btn-default.sciblog {
+    background: transparent;
+    height: 35px;
+    width: 75px;
+    float: right;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 92px;
+    }
 }
