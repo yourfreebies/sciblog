@@ -128,9 +128,8 @@
     padding-left: 0px;
     }
 }
-}
 @media only screen and (max-device-width: 480px) {
-    #wrapper {
+#wrapper {
     padding-right: 0;
     }
 
@@ -161,7 +160,7 @@
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
-     #wrapper {
+#wrapper {
     padding-right: 0;
     }
 
@@ -171,10 +170,6 @@
 
     #sidebar-wrapper {
     width: 0;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-    width: 150px;
     }
 
     #page-content-wrapper {
