@@ -16,7 +16,7 @@
 }
 
 #wrapper.toggled {
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 #sidebar-wrapper {
@@ -36,7 +36,7 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 150px;
 }
 
 #page-content-wrapper {
@@ -55,7 +55,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 150px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -99,7 +99,7 @@
 }
 
 @media(min-width:768px) {
-    #wrapper {
+#wrapper {
     padding-right: 0;
     }
 
@@ -111,10 +111,6 @@
     width: 0;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
-    width: 200px;
-    }
-
     #page-content-wrapper {
 
     position: absolute;
@@ -124,6 +120,14 @@
     position: absolute;
     margin-right: -250px;
     }
+
+    #wrapper.toggled #sidebar-wrapper {
+    width: 150px;
+    }
+    #wrapper.toggled {
+    padding-left: 0px;
+    }
+}
 }
 @media only screen and (max-device-width: 480px) {
     #wrapper {
@@ -138,10 +142,6 @@
     width: 0;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
-    width: 200px;
-    }
-
     #page-content-wrapper {
 
     position: absolute;
@@ -153,13 +153,13 @@
     }
 
     #wrapper.toggled #sidebar-wrapper {
-    width: 130px;
+    width: 150px;
     }
     #wrapper.toggled {
     padding-left: 0px;
     }
-
 }
+
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
      #wrapper {
     padding-right: 0;
@@ -174,7 +174,7 @@
     }
 
     #wrapper.toggled #sidebar-wrapper {
-    width: 200px;
+    width: 150px;
     }
 
     #page-content-wrapper {
