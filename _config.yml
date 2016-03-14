@@ -17,7 +17,7 @@ author: AIRRAYA
 gems: [jekyll-paginate]
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 paginate: 5
 paginate_path: 'page:num/'
 comments: true
