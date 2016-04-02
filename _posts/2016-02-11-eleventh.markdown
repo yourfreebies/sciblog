@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "second post"
-date:   2016-02-02
-categories: technology computer news
-tags: holiday
+title:  "Eleventh post"
+date:   2016-02-11
+category: technology
+tags: [css, html]
 
 # Author.
 author: Airraya Group

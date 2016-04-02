@@ -93,3 +93,56 @@ img {
 .sciblog {
 
 }
+.pagination ul > li > a:hover {
+    background-color: #2582F2;
+	color: #fff;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+    display: inline;
+    padding: 5px 12px;
+    line-height: 35px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+.pagination ul > li {
+display: inline;
+}
+a h2{
+    color: #2582F2;
+    text-decoration: none;
+}
+#mc_embed_signup .button:hover {
+    background-color: #1C5484;
+}
+#mc_embed_signup .button {
+    clear: both;
+    background-color: #337ab7;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+#mc_embed_signup{
+background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+}
+ul.posts {
+list-style-image: url('../img/code.png');"
+}
