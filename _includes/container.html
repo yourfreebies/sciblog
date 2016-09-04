@@ -41,9 +41,9 @@
 						{% if paginator.previous_page %}
 
 						  {% if paginator.previous_page == 1 %}
-							<li><a href="/">Previous</a></li>
+							<li><a href="/sciblog/">Previous</a></li>
 						  {% else %}
-							<li><a href="/page{{ paginator.previous_page }}">Previous</a></li>
+							<li><a href="/sciblog/page{{ paginator.previous_page }}">Previous</a></li>
 						  {% endif %}
 
 						{% else %}
@@ -53,7 +53,7 @@
 						{% if paginator.page == 1 %}
 						  <li><span class="active">1</span></li>
 						{% else %}
-						  <li><a href="/">1</a></li>
+						  <li><a href="/sciblog/">1</a></li>
 						{% endif %}
 
 						{% for count in (2..paginator.total_pages) %}
@@ -61,12 +61,12 @@
 						  {% if count == paginator.page %}
 							<li><span class="active">{{ count }}</span></li>
 						  {% else %}
-							<li><a href="/page{{ count }}">{{ count }}</a></li>
+							<li><a href="/sciblog/page{{ count }}">{{ count }}</a></li>
 						  {% endif %}
 						{% endfor %}
 
 						{% if paginator.next_page %}
-						  <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+						  <li><a href="/sciblog/page{{ paginator.next_page }}">Next</a></li>
 						{% else %}
 						  <li><span class="disabled">Next</span></li>
 						{% endif %}
