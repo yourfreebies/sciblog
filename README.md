@@ -1,8 +1,8 @@
 # [Air Raya Group](http://webdesign.airrayagroup.com/)
 
-[Sci blog](http://sciblog.yourfreebies.org/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
+[Sci blog](http://www.yourfreebies.org/sciblog/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
 
-[demo](http://sciblog.yourfreebies.org/) 
+[demo](http://www.yourfreebies.org/sciblog/) 
 
 Unless otherwise noted, this theme is released under MIT licence. 
 
