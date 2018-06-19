@@ -1,8 +1,8 @@
-# [Air Raya Group](http://webdesign.airrayagroup.com/)
+# [Air Raya Group](http://www.airrayagroup.com/)
 
-[Sci blog](http://www.yourfreebies.org/sciblog/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
+[Sci blog](https://yourfreebies.github.io/sciblog/) is jekyll theme created by [Air Raya Group](http://www.airrayagroup.com/).
 
-[demo](http://www.yourfreebies.org/sciblog/) 
+[demo](https://yourfreebies.github.io/sciblog/) 
 
 Unless otherwise noted, this theme is released under MIT licence. 
 
@@ -41,7 +41,7 @@ Have a bug or an issue with this template? Please contact our team airrayagroup@
 
 ## Creator
 
-Sci blog theme was created by and is maintained by **Air raya Group Web Design team**, at [Air Raya Group Web Design](http://webdesign.airrayagroup.com/).
+Sci blog theme was created by and is maintained by **Air raya Group Web Design team**, at [Air Raya Group](http://www.airrayagroup.com/).
 
 
 ## Copyright and License
