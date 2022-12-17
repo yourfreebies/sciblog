@@ -1,6 +1,6 @@
 # [Air Raya](http://www.airraya.com/)
 
-[Sci blog](https://yourfreebies.github.io/sciblog/) is jekyll theme created by [Air Raya Group](http://www.airraya.com/).
+[Sci blog](https://yourfreebies.github.io/sciblog/) is jekyll theme created by [Air Raya](http://www.airraya.com/).
 
 [demo](https://yourfreebies.github.io/sciblog/) 
 
@@ -41,12 +41,13 @@ Have a bug or an issue with this template? Please contact our team airrayagroup@
 
 ## Creator
 
-Sci blog theme was created by and is maintained by **Air raya Group Web Design team**, at [Air Raya](http://www.airraya.com/).
+Sci blog theme was created by and is maintained by **Air Raya**, at [Air Raya](http://www.airraya.com/).
 
 ## Support my project too
 
-[Maple Learning](https://www.maplelearning.org/)
-[iblogger](https://www.iblogger.ca)
+- [Maple Learning](https://www.maplelearning.org/)
+
+- [iblogger](https://www.iblogger.ca)
 
 
 ## Copyright and License
